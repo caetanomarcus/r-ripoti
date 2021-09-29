@@ -10,6 +10,7 @@ export const Container = styled.div `
     box-shadow: inset 2px 2px 2px 4px #740001;
     position: fixed;
     top:0;
+    left: 0;
     width: 100vw;
     height: 25vh;
 `

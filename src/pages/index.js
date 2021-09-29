@@ -2,10 +2,11 @@ import * as React from "react"
 import Header from "../components/Header"
 import Main from "../components/Main"
 import { createGlobalStyle } from "styled-components";
+import { Helmet } from "react-helmet";
 
 const GlobalStyle = createGlobalStyle `
   * {
-    padding: 0;
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
   }
@@ -20,6 +21,11 @@ const GlobalStyle = createGlobalStyle `
 const IndexPage = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Réri Pobre
+        </title>
+      </Helmet>
       <GlobalStyle />
       <Header />
       <Main />

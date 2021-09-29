@@ -42,4 +42,5 @@ export const Avatar = styled.img `
     height: 75%;
     border: 3px white double;
     border-radius: 3px;
+    margin-bottom: 1rem;
 `

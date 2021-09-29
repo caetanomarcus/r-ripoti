@@ -8,7 +8,7 @@ const Main = () => {
     const [listaPersonagens, setListaPersonages] = useState([])
 
     const getData = async () => {
-        const info = await axios.get(' http://hp-api.herokuapp.com/api/characters');
+        const info = await axios.get(' https://hp-api.herokuapp.com/api/characters');
 
         const completeInfo = info.data.map(item => {
             return {...item, slug: item.name.toLowerCase().replace(' ', '-')}
@@ -25,10 +25,13 @@ const Main = () => {
         <S.Container>
             {listaPersonagens.map((item, index) => {
                return (
-                <S.Card key={index}>
+                <Link to={'/' + item.slug} >
+                    <S.Card key={index}>
                     <S.Name>{item.name}</S.Name>
                     <S.Avatar src={item.image} />
+                    <Link to={'/'+item.slug} >veja mais</Link>
                 </S.Card>
+                </Link>
             )
             })}
         </S.Container>
