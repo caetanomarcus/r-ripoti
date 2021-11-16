@@ -12,6 +12,7 @@ const Header = () => {
                     <li><Link to='/'>início</Link></li>
                     <li><Link to='/sobre'>sobre</Link></li>
                     <li><Link to='/contato'>contato</Link></li>
+                    <li><Link to="/localizacao">localização</Link></li>
                 </S.ListMenu>
             </S.Container>
         )

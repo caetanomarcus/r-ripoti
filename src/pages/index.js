@@ -17,7 +17,6 @@ const GlobalStyle = createGlobalStyle `
   }
 
 `
-
 const IndexPage = () => {
   return (
     <>
